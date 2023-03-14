@@ -9,7 +9,7 @@ def read_root():
 
 
 @app.get("/hello/{name}")
-def read_name(name: str = None):
+def read_name(name:str = None):
     return {"hello":name}
 
 handler = Mangum(app)
